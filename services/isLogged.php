@@ -2,7 +2,7 @@
 /*
  * isLogged.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Tells if a user is connected by sending in JSON format the login of the user connected
  * If no one is connected, an empty string is sent back

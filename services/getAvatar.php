@@ -2,7 +2,7 @@
 /*
  * getAvatar.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Gets the avatar of a user and resize it 
  */

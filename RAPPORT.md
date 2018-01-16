@@ -16,6 +16,10 @@
 
 Le projet implante toutes les fonctionnalités demandées, c'est-à-dire :
 
+*Voir l'agenda
+*ecrire a un employé
+*Voir le menu cantine en Pdf
+*suivre le news de l'entreprise
 * Voir sur la page d'accueil la liste des messages les plus récents
 * Rechercher un utilisateur
   * Lorsque l'on clique sur cet utilisateur, la liste des messages de la page d'accueil devient celle de l'utilisateur recherché
@@ -23,11 +27,10 @@ Le projet implante toutes les fonctionnalités demandées, c'est-à-dire :
 * Voir le profil d'un utilisateur
   * Nom, login, avatar et description
   * Sa liste de messages mais aussi de mentions
-* Follow et unfollow un utilisateur
+* Follow et unfollow un employé
 * Créer un compte, se logger, se délogger
-* Mettre à jour son profil (informations et avatar)
+* Mettre à jour son profil (informations )
 * Popup de l'utilisateur mentionné lorsque l'on survole une mention
-
 **BONUS :**
 * Voir la liste de followers sur le profil d'un utilisateur
 * Voir quelque stats : le nombre de followers et de messages
@@ -37,7 +40,7 @@ Le projet implante toutes les fonctionnalités demandées, c'est-à-dire :
 
 ### <a name="base">2 Base de données</a>
 
-Les bases de données sont structurées en 5 tables :
+Les bases de données sont structurées en 6 tables :
 
 * `users` :
   * `login` : le login de l'utilisateur, celui-ci sert de clé primaire
@@ -57,6 +60,8 @@ Les bases de données sont structurées en 5 tables :
   * `user_following` : la personne qui suit, clé étrangère (users -> login)
 * `avatars` :
   * `login` : le login de l'utilisateur, clé primaire et étrangère (users -> login)
+* `news` : le news de l entreprise
+
 
 Le fichier permettant de créer ces tables est : `db.sql`
 
@@ -115,21 +120,13 @@ Le fichier permettant de créer ces tables est : `db.sql`
 * `signin.php`
 * `signup.php`
 
----
 
-### <a name="remarques">4 Remarques</a>
-
-* Nous utilisons certaines *features* d'ES6 tels que les mots-clés *const*, *let* et les promises (pour une meilleure gestion des requêtes asyncrhones). Par conséquent, cet application n'est pas totalement supporté par les navigateurs tels que Safari et Internet Explorer.
-* Vous pouvez trouver de plus amples précisions sur les fichiers au début de ceux-ci.
-* La liste des services a une documentation légère au début de chaque fichier car nous n'avons pas trouvé qu'il était nécessaire d'en rajouter plus alors que [l'explication du projet](http://www.fil.univ-lille1.fr/~bogaert/tw2/projet2017-2/projet2017-2.html) donnait déjà beaucoup de précisions
-
----
 
 ### <a name="test">5 Test du projet</a>
 
-Voici comment vous pouvez tester les fonctionnalités du projet :
+Voici comment vous pouvez tester les fonctionnalités du de l application :
 
-1. Cliquez [ici](http://webtp.fil.univ-lille1.fr/~lombart/rezozio) puis cliquez sur *Sign in* pour vous connectez.
+1. Cliquez sur index puis cliquez sur *Sign in* pour vous connectez.
 2. Vous vous rendez compte que vous n'avez pas de compte, cliquez sur *No account ? Click here !*
 3. Vous voici sur la page vous permettant de créer votre compte. Testez par vous même les limites (mot de passe trop petit, ...), des erreurs seront affichés.
 4. Vous êtes redirigés sur votre profil qui est un peu triste, pas d'avatar, pas de messages, pas de followers, mais nous allons y remédier. Cliquez sur *settings* tout en haut de la page.
@@ -143,10 +140,13 @@ Voici comment vous pouvez tester les fonctionnalités du projet :
 12. Si l'un des messages mentionne un autre utilisateur, survolez le login de cet utilisateur et vous verrez de plus amples informations.
 13. Rendez-vous sur le profil de la personne que vous avez recherché et cliquez sur *Follow* ! Super, vous pouvez voir directement les informations de ce profil mis à jour ! Il a un follower en plus : VOUS !
 14. Vous avez déjà touché à l'informatique et vous remarquez que l'URL a un paramètre `user` sur le profil de l'utilisateur que vous suivez, vous avez un esprit vicieux et vous vous dites "essayons de voir ce que ça donne si je rentre n'importe quoi" et constatez le résultat.
-15. Malheureusement, ce réseau social est assez peu connu et personne ne vous follow. Pourtant, vous avez envie que quelqu'un vous follow. Vous décidez donc de créer un deuxième compte. Cliquez sur *Logout* et créez vous un autre compte.
+15. Malheureusement vous etes assez peu connu et personne ne vous écris. Pourtant, vous avez envie que quelqu'un vous follow. Vous décidez donc de créer un deuxième compte. Cliquez sur *Logout* et créez vous un autre compte.
 16. Avec cet autre compte écrivez un message en vous citant vous même, et suivez vous.
-17. Déconnectez vous à nouveau et revenez sur votre compte d'origine. Allez sur votre profil, génial ! Vous avez un follower ! Cliquez sur mentioned, que se passe-t-il ? Quelqu'un vous a mentionné ? C'est le début de la popularité. Vous vous sentez déjà addict à ce réseau social.
+17. Déconnectez vous à nouveau et revenez sur votre compte d'origine. Allez sur votre profil, génial ! Vous avez un follower ! Cliquez sur mentioned, que se passe-t-il ? Quelqu'un vous a mentionné ? C'est le début de la popularité. 
 18. Faites ce que vous voulez maintenant !
+19. cliquez sur agenda et voir les événements avenir.
+20. cliquez sur menu cantine afin d afficher le menu cantine.
+
 
 ---
 

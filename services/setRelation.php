@@ -2,7 +2,7 @@
 /**
  * setRelation.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  * 
  * description : Service that allows modification of the relation
  * of two users, meaning altering whether one follows the other.

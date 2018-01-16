@@ -1,7 +1,7 @@
 /*
  * Profile.js
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Constructs a new profile, this script ie meant to be included
  * in other pages just to simplify the construction of the HTML Code of a profile 

@@ -1,7 +1,7 @@
 /*
  * Message.js
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * description : transforms the message's text (where @ et backlash are escaped but not mentions)
  * in a HTML/DOM element printable

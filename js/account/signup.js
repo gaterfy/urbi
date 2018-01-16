@@ -1,7 +1,7 @@
 /*
  * signup.js
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Manages the inscription of auser
  * this script validates first if the fields are correct

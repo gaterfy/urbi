@@ -2,7 +2,7 @@
 /*
  * getFollowers.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Gets the followers of a user or the users he is following
  */

@@ -2,7 +2,7 @@
 /*
  * logout.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Signout if a user was connected by destroying the session with session_destroy()
  */

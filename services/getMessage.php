@@ -2,7 +2,7 @@
 /*
  * getMessage.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Gets the message in the database.
  * We can get the message only with its id

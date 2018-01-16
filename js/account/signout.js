@@ -1,6 +1,6 @@
 /*
  * signout.js
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Logs out a user by destroying the session
  * If the process has been successfull, the user is redirected to the homepage

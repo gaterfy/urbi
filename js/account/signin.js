@@ -1,7 +1,7 @@
 /*
  * signin.js
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Scripts that manages the signin of a user
  * this script makes a asynchronous request to the login service in order to log a user

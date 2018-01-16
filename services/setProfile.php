@@ -2,7 +2,7 @@
 /*
  * setProfile.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Updates the profile of a user that is to say its informations (but not the avatar ! this process is handled in uploadAvatar.php)
  */

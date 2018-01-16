@@ -2,7 +2,7 @@
 /*
  * postMessage.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Allows a user to post a message in the database
  */

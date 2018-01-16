@@ -2,7 +2,7 @@
 /*
  * uploadAvatar.php
  *
- * authors : Thomas Lombart - Martin Vasilev
+ * authors : Berfy
  *
  * Uploads the avatar of a user and resizes it if necessary
  */
