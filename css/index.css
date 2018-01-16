@@ -1,0 +1,168 @@
+/*
+ * index.css
+ *
+ * authors : Thomas Lombart - Martin Vasilev
+ *
+ * Style for the homepage
+ */
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+h1, a, span, p {
+  font-family: Lato;
+}
+
+
+/* SEARCH USER */
+
+#search-user {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  border-bottom: 1px solid black;
+}
+
+.fa-search {
+  color: black;
+  margin-right: 20px;
+}
+
+#search-user input {
+  width: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  display: block;
+  font-size: 15px;
+  color: black;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#found-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#found-users .user {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid lightgray;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#found-users .user:hover {
+  background-color: #eee;
+}
+
+
+/* MESSAGE THREAD */
+
+#message-thread {
+  display: block;
+  margin: auto;
+  width: 95%;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+#message-thread button {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all 0.6s;
+}
+
+#message-thread button:hover {
+  border-color: orange;
+}
+
+.message {
+  border-bottom: 0.5px solid lightgray;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.message:last-child {
+  border: none;
+}
+
+.message .date {
+  float: right;
+  font-size: 0.8em;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* AUTHOR */
+
+.avatar {
+  border-radius: 5px;
+  border: 0.5px solid lightgrey;
+}
+
+.user {
+  margin: 5px 5px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.user>div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.user a {
+  color: black;
+  text-align: left;
+}
+
+.author {
+  font-size: 1.1em;
+}
+
+.message-content {
+  margin-left: 5px;
+}
+
+.mention {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.mention:hover {
+  color: rgb(30, 138, 191);
+}

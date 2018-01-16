@@ -1,0 +1,232 @@
+/*
+ * form.css
+ *
+ * authors : Thomas Lombart - Martin Vasilev
+ *
+ * Style for the profile of a user
+ */
+
+h1, a, span, p {
+  font-family: Lato;
+}
+
+
+/* LAYOUT */
+
+body, html {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.profile-container {
+  flex: 1 0 0;
+  margin: 0px 10px;
+}
+
+.profile-container .name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.message-container {
+  flex: 2 0 0;
+  margin: 0px 10px;
+}
+
+
+/* PROFILE */
+
+.name {
+  font-weight: 900;
+}
+
+.avatar {
+  border-radius: 5px;
+  border: 0.5px solid lightgrey;
+}
+
+.login {
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.description {
+  width: 80%;
+  font-style: italic;
+}
+
+#follow {
+  width: 50%;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.6s;
+}
+
+#follow:hover {
+  border-color: orange;
+}
+
+
+/* MESSAGES */
+
+.message-container form {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.message-thread-container {
+  border: 0.5px solid #ccc;
+  margin-top: 10px;
+}
+
+.message-thread-container>div:first-child {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+#mentioned {
+  display: none;
+}
+
+#mentioned-button, #authored-button {
+  text-align: center;
+  width: 50%;
+  font-family: Lato;
+  font-weight: 700;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 20px;
+}
+
+#mentioned-button.active, #authored-button.active {
+  background-color: #ccc;
+}
+
+.message-thread-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+.message {
+  border-bottom: 0.5px solid lightgray;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.message:last-child {
+  border: none;
+}
+
+.message .date {
+  float: right;
+  font-size: 0.8em;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.author, .message-content {
+  margin-left: 5px;
+}
+
+.author, .mention {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.author:hover, .mention:hover {
+  color: rgb(30, 138, 191);
+}
+
+.load-more {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all 0.6s;
+}
+
+.load-more:hover {
+  border-color: orange;
+}
+
+
+/* FOLLOW */
+
+.follow-container {
+  height: 90%;
+  flex: 1 0 0;
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+.followers, .following {
+  height: 50%;
+  overflow: scroll;
+}
+
+.followers .title, .following .title {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.user {
+  margin: 5px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.user a {
+  color: black;
+  text-align: left;
+}
+
+.user>div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.not-found, .not-found-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-user {
+  margin: auto;
+  font-family: Lato;
+  border: 1px solid #CD8C95;
+  padding: 20px;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.5em;
+  background-color: #CD8C95;
+}

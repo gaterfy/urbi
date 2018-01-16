@@ -1,0 +1,34 @@
+/*
+ * feedback.css
+ *
+ * authors : Thomas Lombart - Martin Vasilev
+ *
+ * Style for the feedback messages (on settings page)
+ */
+
+.feedback {
+  margin: auto;
+  padding: 3px;
+  width: 33%;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.feedback.show {
+  opacity: 1;
+}
+
+.success {
+  background-color: #7CBF9C;
+}
+
+.error {
+  background-color: #CD8C95;
+}
+
+.feedback-message {
+  text-align: center;
+  font-family: Lato;
+  font-weight: 700;
+}

@@ -1,0 +1,64 @@
+/*
+ * popover.css
+ *
+ * authors : Thomas Lombart - Martin Vasilev
+ *
+ * Style for the popup of the user (when we hover a mentioned user)
+ */
+
+
+/* The element to hover over */
+
+.user-popover {
+  border-radius: 16px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  width: 30px;
+}
+
+.user-popover .popover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  bottom: 40px;
+  color: white;
+  display: none;
+  left: -95px;
+  padding: 10px;
+  position: absolute;
+  width: 230px;
+  z-index: 4;
+}
+
+.user-popover .popover span {
+  color: white;
+}
+
+.user-popover .popover:before {
+  border-top: 7px solid rgba(0, 0, 0, 0.85);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  bottom: -7px;
+  content: '';
+  display: block;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+}
+
+.user-popover:hover .popover {
+  display: block;
+  animation: popup 0.5s linear;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    bottom: 30px;
+  }
+  to {
+    opacity: 1;
+    bottom: 40px;
+  }
+}

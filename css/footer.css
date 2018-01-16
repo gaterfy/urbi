@@ -1,0 +1,38 @@
+/*
+ * footer.css
+ *
+ * authors : Thomas Lombart - Martin Vasilev
+ *
+ * Style for the footer of the page (credits + GitHub)
+ */
+
+.delimiter-footer {
+  width: 85%;
+  margin-top: 30px;
+}
+
+footer {
+  font-family: Lato;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: black;
+}
+
+.fa-github {
+  transition: all 0.5s;
+}
+
+.fa-github:hover {
+  transform: scale(1.1);
+}
